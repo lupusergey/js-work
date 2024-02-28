@@ -10,9 +10,12 @@ console.log(str3);
 let concat = str1 + str2 + str3;
 console.log(concat);
 
+let number = prompt(12345);
 
+if (number.length === 5 && !NaN(number)) {
+    let dig = number.split('');
+    let res = dig.join(' ');
 
-let number = prompt('Пишемо число');
-let result = number.length;
-console.log(result);
+    console.log(+ res);
+}
 
