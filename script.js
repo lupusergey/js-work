@@ -37,20 +37,21 @@ alert(city);
 //задаємо три види спорту
 let sport1 = prompt('футбол-чемпіон світу.', 'Мессі');
 let sport2 = prompt('бокс-чемпіон світу.', 'Усік');
-let sport3 = prompt('борьба-чемпіон світу.', 'Беленюк');
+let sport3 = prompt('боротьба-чемпіон світу.', 'Беленюк');
 
 let userChoice = prompt("виберіть вид спорта: " + sport1 + ", " + sport2 + " або " + sport3);
 
-switch (userChoice) {
-    case sport1:
-        alert('круто хочеш стати чемпіоном!' + sport1);
-    case sport2:
-        alert('круто хочеш стати чемпіоном!' + sport2);
-    case sport3:
-        alert('круто хочеш стати чемпіоном!' + sport3);
-        break;
-}
+userChoice = userChoice.toLowerCase();
 
+if (userChoice === 'футбол') {
+    alert('круто хочеш стати чемпіоном!');
+} else if (userChoice === 'бокс') {
+    alert('круто хочеш стати чемпіоном!');
+} else if (userChoice === 'боротьба') {
+    alert('круто хочеш стати чемпіоном!');
+} else {
+    alert('не хочеш стати чемпіоном');
+}
 alert(userChoice);
 
 alert(`
