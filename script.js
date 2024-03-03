@@ -49,8 +49,6 @@ if (userChoice === 'футбол') {
     alert('круто хочеш стати чемпіоном!');
 } else if (userChoice === 'боротьба') {
     alert('круто хочеш стати чемпіоном!');
-} else {
-    alert('не хочеш стати чемпіоном');
 }
 alert(userChoice);
 
